@@ -1,0 +1,11 @@
+Section "ServerLayout"
+    Identifier "Layout0"
+    Option "AutoAddDevices" "false"
+    Option "AllowEmptyInput" "False"
+    InputDevice "fake" "CorePointer"
+EndSection
+
+Section "Files"
+    ModulePath    "/usr/local/lib/xorg/modules/extensions/.nvidia_optimus"
+    ModulePath    "/usr/local/lib/xorg/modules"
+EndSection
