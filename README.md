@@ -11,32 +11,32 @@ Install `x11/virtualgl` and `x11/nvidia-driver-optimus`
  
 Now you must configure a `/etc/X11/xorg.conf.nv`. Mine looks a little like this:
  
-Section "ServerLayout"
-    Identifier "Layout0"
-    Option "AutoAddDevices" "false"
-    Option "AllowEmptyInput" "False"
-    InputDevice "fake" "CorePointer"
-EndSection
+  Section "ServerLayout"
+      Identifier "Layout0"
+      Option "AutoAddDevices" "false"
+      Option "AllowEmptyInput" "False"
+      InputDevice "fake" "CorePointer"
+  EndSection
 
-Section "Files"
-    ModulePath    "/usr/local/lib/xorg/modules/extensions/.nvidia_optimus"
-    ModulePath    "/usr/local/lib/xorg/modules"
-EndSection
+  Section "Files"
+      ModulePath    "/usr/local/lib/xorg/modules/extensions/.nvidia_optimus"
+      ModulePath    "/usr/local/lib/xorg/modules"
+  EndSection
 
-Section "Device"
-    Identifier "Device1"
-    Driver "nvidia"
-    VendorName "NVIDIA Corporation"
-    BusID "PCI:01:00:0"
-    Option "NoLogo" "true"
-    Option "UseEDID" "false"
-    Option "ConnectedMonitor" "DFP"
-EndSection
- 
-Section "InputDevice"
-    Identifier "fake"
-    Driver ""
-EndSection
+  Section "Device"
+      Identifier "Device1"
+      Driver "nvidia"
+      VendorName "NVIDIA Corporation"
+      BusID "PCI:01:00:0"
+      Option "NoLogo" "true"
+      Option "UseEDID" "false"
+      Option "ConnectedMonitor" "DFP"
+  EndSection
+
+  Section "InputDevice"
+      Identifier "fake"
+      Driver ""
+  EndSection
  
 Modify xmj's turn_off_nvidia.sh replacing all _OFF/DOFF/SDOF and so on to read
 ON instead. Execute it. Now `kldload nvidia`
