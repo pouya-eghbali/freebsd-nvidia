@@ -9,3 +9,18 @@ Section "Files"
     ModulePath    "/usr/local/lib/xorg/modules/extensions/.nvidia_optimus"
     ModulePath    "/usr/local/lib/xorg/modules"
 EndSection
+
+Section "Device"
+    Identifier "Device1"
+    Driver "nvidia"
+    VendorName "NVIDIA Corporation"
+    BusID "PCI:01:00:0"
+    Option "NoLogo" "true"
+    Option "UseEDID" "false"
+    Option "ConnectedMonitor" "DFP"
+EndSection
+ 
+Section "InputDevice"
+    Identifier "fake"
+    Driver ""
+EndSection
