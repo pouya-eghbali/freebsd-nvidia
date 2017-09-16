@@ -127,3 +127,12 @@ echo -n "Trying $m: "
   esac
 done
 ```
+
+there's also this:
+
+```
+% fetch https://people.freebsd.org/~xmj/turn_off_gpu.sh
+% make -C /usr/ports/sysutils/acpi_call install clean
+% vim turn_off_gpu.sh # read it before executing!
+% sh turn_off_gpu.sh # as root user
+```
