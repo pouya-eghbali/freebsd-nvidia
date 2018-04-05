@@ -16,9 +16,9 @@ if [ $MODULE_LOADED != "0" ]; then
 fi
 
 
-if [ -f ~/.gpu_method ]; then
+if [ -f ~/.gpu_on_method ]; then
 echo "Using previously stored method, as it was previously successful..."
-. ~/.gpu_method
+. ~/.gpu_on_method
 else
 methods="
 \_SB.PCI0.P0P1.VGA._ON
