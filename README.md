@@ -1,3 +1,7 @@
+Apparently when you search for `freebsd nvidia optimus` this repository is #4 on the results. I've recently made a port to make nvidia optimus work on freebsd, you can check it here: 
+
+https://github.com/pouya-eghbali/freebsd-nvidia-optimus
+
 # freebsd-nvidia
 Make Optimus work with freebsd
 
