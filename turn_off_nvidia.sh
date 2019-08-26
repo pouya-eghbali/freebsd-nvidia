@@ -62,8 +62,8 @@ echo -n "Trying $m: "
 		echo "Call succeeded!"
 		if [ ! -f ~/.gpu_method ];
 		then
-			echo "Storing $m in ~/.gpu_method for reusal"
-			echo "export methods=\"$m\"" > ~/.gpu_method
+			echo "Storing $m in ~/.gpu_off_method for reusal"
+			echo "export methods=\"$m\"" > ~/.gpu_off_method
 		fi
 		break
 		;;
