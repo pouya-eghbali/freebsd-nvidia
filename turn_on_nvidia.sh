@@ -33,7 +33,7 @@ methods="
 \_SB.PCI0.PEG0.GFX0.DON
 \_SB.PCI0.PEG1.GFX0.DON
 \_SB.PCI0.PEG0.PEGP._ON
-\_SB.PCI0.XVR0.Z01I.DGOF
+\_SB.PCI0.XVR0.Z01I.DGON
 \_SB.PCI0.PEGR.GFX0._ON
 \_SB.PCI0.PEG.VID._ON
 \_SB.PCI0.PEG0.VID._ON
@@ -63,7 +63,7 @@ echo -n "Trying $m: "
 		if [ ! -f ~/.gpu_method ];
 		then
 			echo "Storing $m in ~/.gpu_method for reusal"
-			echo "export methods=\"$m\"" > ~/.gpu_method
+			echo "export methods=\"$m\"" > ~/.gpu_on_method
 		fi
 		break
 		;;
